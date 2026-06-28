@@ -5,14 +5,22 @@
     <link>https://chty-syq.github.io/inknote-web</link>
     <description>记录技术学习、长期写作与古典摘录的个人博客。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 28 Jun 2026 09:07:59 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 28 Jun 2026 13:40:08 GMT</lastBuildDate>
     <managingEditor>Chty</managingEditor>
     <atom:link xmlns:atom="http://www.w3.org/2005/Atom" href="https://chty-syq.github.io/inknote-web/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>新年的不定积分</title>
+      <link>https://chty-syq.github.io/inknote-web/notes/8043157</link>
+      <guid isPermaLink="true">https://chty-syq.github.io/inknote-web/notes/8043157</guid>
+      <pubDate>Sun, 28 Jun 2026 13:39:16 GMT</pubDate>
+      <description>1. Problem Description 时隔多年终于又回想起了 JJchen 老师留下的新年积分 $$\int \frac{4035 4\sin x\cos x+2x+3+x^2 }{ 2016\cos x+2017\sin x+2018x\cos x+2019x\sin x ^2}dx$$ 这个问题难度略大， JJchen 老师给出了以下提示，我们需要依次破解 $ 1 \int \frac{\cos^2{x}}{ \cos{x}+x\sin{x} ^2}dx=\fra</description>
+      <category>微积分</category>
+    </item>
     <item>
       <title>测试</title>
       <link>https://chty-syq.github.io/inknote-web/inknote/5369007</link>
       <guid isPermaLink="true">https://chty-syq.github.io/inknote-web/inknote/5369007</guid>
-      <pubDate>Sat, 27 Jun 2026 11:13:58 GMT</pubDate>
+      <pubDate>Sun, 28 Jun 2026 12:51:39 GMT</pubDate>
       <description></description>
     </item>
     <item>
@@ -75,17 +83,9 @@
       <description>1. Characterizing the Induced Optimal Policy 在之前的文章 Maximum Entropy IRL 中，我们利用最大熵原理，将轨迹分布建模为 Boltzmann distribution 玻尔兹曼分布 $$p {\theta} \tau = \frac{1}{Z {\theta}}\exp c {\theta} \tau $$ 然后进行极大似然估计，来优化参数 $\theta$ 的值。本篇中我们使用符号 $c$ 来表示奖励函数，用来</description>
     </item>
     <item>
-      <title>新年的不定积分</title>
-      <link>https://chty-syq.github.io/inknote-web/notes/8043157</link>
-      <guid isPermaLink="true">https://chty-syq.github.io/inknote-web/notes/8043157</guid>
-      <pubDate>Sun, 21 Jun 2026 13:36:53 GMT</pubDate>
-      <description>1. Problem Description 时隔多年终于又回想起了 JJchen 老师留下的新年积分 $$\int \frac{4035 4\sin x\cos x+2x+3+x^2 }{ 2016\cos x+2017\sin x+2018x\cos x+2019x\sin x ^2}dx$$ 这个问题难度略大， JJchen 老师给出了以下提示，我们需要依次破解 $ 1 \int \frac{\cos^2{x}}{ \cos{x}+x\sin{x} ^2}dx=\fra</description>
-      <category>微积分</category>
-    </item>
-    <item>
       <title>强化学习重学系列(15) Maximum Entropy IRL</title>
-      <link>https://chty-syq.github.io/inknote-web/notes/15-maximum-entropy-irl</link>
-      <guid isPermaLink="true">https://chty-syq.github.io/inknote-web/notes/15-maximum-entropy-irl</guid>
+      <link>https://chty-syq.github.io/inknote-web/notes/4488563</link>
+      <guid isPermaLink="true">https://chty-syq.github.io/inknote-web/notes/4488563</guid>
       <pubDate>Tue, 16 Jun 2026 13:27:19 GMT</pubDate>
       <description>1. The Idea of Maximun Entropy 基于最大化 margin 的方法无法解决奖励函数二义性的问题，依然存在多种奖励函数可以解释专家的行为，因此这类方法总会引入一些额外信息，例如假设专家策略遥遥领先。 如何在尽量不引入额外约束的条件下解决二义性问题呢？我们先介绍一下熵的概念。 在概率论中，熵常常用来衡量概率分布的不确定性，且不确定性越高则熵值越大，例如在区间固定时，所有的分布中均匀分布的熵最大，因为均匀分布在固定区间每一点取值的概率都相等，所以从中采样</description>
     </item>
