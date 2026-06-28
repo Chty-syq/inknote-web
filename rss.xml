@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Chty&apos;s Blog</title>
+    <link>https://chty-syq.github.io/inknote-web</link>
+    <description>记录技术学习、长期写作与古典摘录的个人博客。</description>
+    <language>zh-CN</language>
+    <lastBuildDate>Sun, 28 Jun 2026 09:07:59 GMT</lastBuildDate>
+    <managingEditor>Chty</managingEditor>
+    <atom:link xmlns:atom="http://www.w3.org/2005/Atom" href="https://chty-syq.github.io/inknote-web/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>测试</title>
+      <link>https://chty-syq.github.io/inknote-web/inknote/5369007</link>
+      <guid isPermaLink="true">https://chty-syq.github.io/inknote-web/inknote/5369007</guid>
+      <pubDate>Sat, 27 Jun 2026 11:13:58 GMT</pubDate>
+      <description></description>
+    </item>
+    <item>
+      <title>Risk-Aware Reinforcement Learning with Bandit-Based Adaptation for Quadrupedal Locomotion</title>
+      <link>https://chty-syq.github.io/inknote-web/notes/3822107</link>
+      <guid isPermaLink="true">https://chty-syq.github.io/inknote-web/notes/3822107</guid>
+      <pubDate>Thu, 25 Jun 2026 12:51:29 GMT</pubDate>
+      <description></description>
+      <category>具身智能</category>
+      <category>强化学习</category>
+    </item>
+    <item>
+      <title>贝塞尔曲线</title>
+      <link>https://chty-syq.github.io/inknote-web/notes/1521109</link>
+      <guid isPermaLink="true">https://chty-syq.github.io/inknote-web/notes/1521109</guid>
+      <pubDate>Tue, 23 Jun 2026 07:58:11 GMT</pubDate>
+      <description>1. Basic Bezier Curves 基础贝塞尔曲线 Definition 1. 给定两个控制点 $P {0},P {1}$，我们定义 linear bezier curve 线性贝塞尔曲线 为 $$B t = 1 t P {0} + t P {1}, \quad t\in 0,1 $$ 即线段 $P {0}P {1}$ 的参数方程，我们称 $B t $ 为线段 $P {0}P {1}$ 的 $t$ 分位点。 Definition 2. 给定三个控制点 $P {0},</description>
+      <category>基础数学</category>
+    </item>
+    <item>
+      <title>Solid Angle</title>
+      <link>https://chty-syq.github.io/inknote-web/notes/2177534</link>
+      <guid isPermaLink="true">https://chty-syq.github.io/inknote-web/notes/2177534</guid>
+      <pubDate>Tue, 23 Jun 2026 06:15:11 GMT</pubDate>
+      <description>1. Introduction 我们在初中阶段就熟知平面角的定义，如图所示 直线 $OA, OB$ 相交于点 $O$，组成了一个平面角 $\theta$，其单位为弧度，定义整个圆周对应的平面角为 $2\pi$，则圆弧 $AB$ 所对应的 $\theta$ 为 $$\theta = \frac{l}{r}$$ 如果不是圆弧，而是一段任意的平面曲线 $f x,y = 0$呢？ 对于熟知微积分的读者来说，这很简单，我们只需要把 $\theta$ 进行微分，每个微元仍是一段圆弧，然后</description>
+      <category>基础数学</category>
+    </item>
+    <item>
+      <title>3D Rotations with Quaternion</title>
+      <link>https://chty-syq.github.io/inknote-web/notes/5367025</link>
+      <guid isPermaLink="true">https://chty-syq.github.io/inknote-web/notes/5367025</guid>
+      <pubDate>Tue, 23 Jun 2026 06:02:59 GMT</pubDate>
+      <description>书接上文，本篇将介绍三维旋转的最后一部分，著名的 Quaternion 四元数 . 虽然网上有很多相关的资料，但它们大多用非常代数的方法来讲述四元数的很多深奥性质，却没有解释清楚它与旋转之间的关系，有种差强人意的感觉。 因此，本篇希望仅讲述四元数的一些简单性质，而将重点放在与旋转的关联与测地插值上，从而展现四元数的精妙之处。 在此之前，我们先来回顾一下复数与二维旋转之间的联系。 1. Complex Number Review 对于两个复数 $z {1} = a {1} + </description>
+      <category>计算机图形学</category>
+      <category>基础数学</category>
+    </item>
+    <item>
+      <title>3D Rotations</title>
+      <link>https://chty-syq.github.io/inknote-web/notes/6237698</link>
+      <guid isPermaLink="true">https://chty-syq.github.io/inknote-web/notes/6237698</guid>
+      <pubDate>Tue, 23 Jun 2026 05:10:27 GMT</pubDate>
+      <description>三维空间下的旋转变换不是很直观，为了更好地理解旋转，我们首先介绍一点 topology 拓扑学 ，这是一个研究空间连通性的数学分支。 之后我们会介绍空间旋转的各种表示方法，例如 matrix 矩阵 Euler angles 欧拉角 angle axis 轴角 quaternions 四元数 这些表示方法本质上都是等价的，而且可以相互转换，但是在应用于具体操作时，使用某些表示方法可能会更加便捷。这里有一些处理旋转操作的例子 inversion 逆变换 composition 合</description>
+      <category>计算机图形学</category>
+      <category>基础数学</category>
+    </item>
+    <item>
+      <title>Spherical Trigonometry</title>
+      <link>https://chty-syq.github.io/inknote-web/notes/5187191</link>
+      <guid isPermaLink="true">https://chty-syq.github.io/inknote-web/notes/5187191</guid>
+      <pubDate>Tue, 23 Jun 2026 05:10:00 GMT</pubDate>
+      <description>最近在使用 signed distance field 有向距离场 求解 mesh 碰撞距离时，研究了一下 libigl 库的计算方法，发现它求了一个叫做 winding number 环绕数 的东西，它的定义如下 Definition 1. Winding Number. 对于给定的 3d mesh $M = V,F $，以及空间内一点 $P\in\mathbb{R}^{3}$，定义 $P$ 点对于该 $M$ 的 winding number 为 $$w P =\sum {</description>
+      <category>非欧几何</category>
+      <category>基础数学</category>
+    </item>
+    <item>
+      <title>Generative Adversarial Imitation Learning</title>
+      <link>https://chty-syq.github.io/inknote-web/notes/3187429</link>
+      <guid isPermaLink="true">https://chty-syq.github.io/inknote-web/notes/3187429</guid>
+      <pubDate>Mon, 22 Jun 2026 14:59:36 GMT</pubDate>
+      <description>1. Characterizing the Induced Optimal Policy 在之前的文章 Maximum Entropy IRL 中，我们利用最大熵原理，将轨迹分布建模为 Boltzmann distribution 玻尔兹曼分布 $$p {\theta} \tau = \frac{1}{Z {\theta}}\exp c {\theta} \tau $$ 然后进行极大似然估计，来优化参数 $\theta$ 的值。本篇中我们使用符号 $c$ 来表示奖励函数，用来</description>
+    </item>
+    <item>
+      <title>新年的不定积分</title>
+      <link>https://chty-syq.github.io/inknote-web/notes/8043157</link>
+      <guid isPermaLink="true">https://chty-syq.github.io/inknote-web/notes/8043157</guid>
+      <pubDate>Sun, 21 Jun 2026 13:36:53 GMT</pubDate>
+      <description>1. Problem Description 时隔多年终于又回想起了 JJchen 老师留下的新年积分 $$\int \frac{4035 4\sin x\cos x+2x+3+x^2 }{ 2016\cos x+2017\sin x+2018x\cos x+2019x\sin x ^2}dx$$ 这个问题难度略大， JJchen 老师给出了以下提示，我们需要依次破解 $ 1 \int \frac{\cos^2{x}}{ \cos{x}+x\sin{x} ^2}dx=\fra</description>
+      <category>微积分</category>
+    </item>
+    <item>
+      <title>强化学习重学系列(15) Maximum Entropy IRL</title>
+      <link>https://chty-syq.github.io/inknote-web/notes/15-maximum-entropy-irl</link>
+      <guid isPermaLink="true">https://chty-syq.github.io/inknote-web/notes/15-maximum-entropy-irl</guid>
+      <pubDate>Tue, 16 Jun 2026 13:27:19 GMT</pubDate>
+      <description>1. The Idea of Maximun Entropy 基于最大化 margin 的方法无法解决奖励函数二义性的问题，依然存在多种奖励函数可以解释专家的行为，因此这类方法总会引入一些额外信息，例如假设专家策略遥遥领先。 如何在尽量不引入额外约束的条件下解决二义性问题呢？我们先介绍一下熵的概念。 在概率论中，熵常常用来衡量概率分布的不确定性，且不确定性越高则熵值越大，例如在区间固定时，所有的分布中均匀分布的熵最大，因为均匀分布在固定区间每一点取值的概率都相等，所以从中采样</description>
+    </item>
+    <item>
+      <title>About</title>
+      <link>https://chty-syq.github.io/inknote-web/about</link>
+      <guid isPermaLink="true">https://chty-syq.github.io/inknote-web/about</guid>
+      <pubDate>Wed, 08 Apr 2026 00:00:00 GMT</pubDate>
+      <description>About the InkNote writing system and the desktop editor behind it.</description>
+    </item>
+  </channel>
+</rss>
