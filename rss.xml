@@ -5,9 +5,16 @@
     <link>https://chty-syq.github.io/inknote-web</link>
     <description>记录技术学习、长期写作与古典摘录的个人博客。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Mon, 29 Jun 2026 11:40:41 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 30 Jun 2026 09:16:52 GMT</lastBuildDate>
     <managingEditor>Chty</managingEditor>
     <atom:link xmlns:atom="http://www.w3.org/2005/Atom" href="https://chty-syq.github.io/inknote-web/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>测试</title>
+      <link>https://chty-syq.github.io/inknote-web/inknote/5369007</link>
+      <guid isPermaLink="true">https://chty-syq.github.io/inknote-web/inknote/5369007</guid>
+      <pubDate>Mon, 29 Jun 2026 12:11:10 GMT</pubDate>
+      <description></description>
+    </item>
     <item>
       <title>新年的不定积分</title>
       <link>https://chty-syq.github.io/inknote-web/notes/8043157</link>
@@ -15,13 +22,6 @@
       <pubDate>Sun, 28 Jun 2026 13:39:16 GMT</pubDate>
       <description>1. Problem Description 时隔多年终于又回想起了 JJchen 老师留下的新年积分 $$\int \frac{4035 4\sin x\cos x+2x+3+x^2 }{ 2016\cos x+2017\sin x+2018x\cos x+2019x\sin x ^2}dx$$ 这个问题难度略大， JJchen 老师给出了以下提示，我们需要依次破解 $ 1 \int \frac{\cos^2{x}}{ \cos{x}+x\sin{x} ^2}dx=\fra</description>
       <category>微积分</category>
-    </item>
-    <item>
-      <title>测试</title>
-      <link>https://chty-syq.github.io/inknote-web/inknote/5369007</link>
-      <guid isPermaLink="true">https://chty-syq.github.io/inknote-web/inknote/5369007</guid>
-      <pubDate>Sun, 28 Jun 2026 12:51:39 GMT</pubDate>
-      <description></description>
     </item>
     <item>
       <title>Risk-Aware Reinforcement Learning with Bandit-Based Adaptation for Quadrupedal Locomotion</title>
