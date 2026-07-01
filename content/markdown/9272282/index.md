@@ -3,7 +3,9 @@ type: markdown
 title: Generative Adversarial Imitation Learning
 slug: "9272282"
 date: 2026-07-01
-updatedAt: 2026-07-01 15:14:47
+updatedAt: 2026-07-01 15:18:37
+tags:
+  - 数学
 published: false
 category: 数学研究
 ---
