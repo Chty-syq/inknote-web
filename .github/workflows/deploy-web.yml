@@ -3,7 +3,7 @@ name: Build Web From InkNote Content
 on:
   push:
     branches:
-      - content
+      - "test"
   workflow_dispatch:
 
 permissions:
@@ -22,6 +22,8 @@ env:
 jobs:
   build:
     runs-on: ubuntu-latest
+    outputs:
+      should_deploy: ${{ steps.branch-check.outputs.should_deploy }}
     steps:
       - name: Checkout content source
         uses: actions/checkout@v4
@@ -29,7 +31,29 @@ jobs:
           ref: ${{ github.ref_name }}
           path: content-source
 
+      - name: Check deployment branch
+        id: branch-check
+        shell: bash
+        run: |
+          current_branch="${GITHUB_REF_NAME}"
+          if [ ! -f content-source/content/site/site.config.json ]; then
+            echo "should_deploy=false" >> "$GITHUB_OUTPUT"
+            echo "No InkNote site config found on ${current_branch}; skip deployment."
+            exit 0
+          fi
+
+          configured_branch="$(node -e "const fs=require('fs'); const config=JSON.parse(fs.readFileSync('content-source/content/site/site.config.json','utf8')); const repository=config.repository||{}; process.stdout.write(String(repository.contentBranch||repository.branch||'').trim());")"
+          if [ -n "$configured_branch" ] && [ "$configured_branch" != "$current_branch" ]; then
+            echo "should_deploy=false" >> "$GITHUB_OUTPUT"
+            echo "Current branch ${current_branch} is not configured deployment branch ${configured_branch}; skip deployment."
+            exit 0
+          fi
+
+          echo "should_deploy=true" >> "$GITHUB_OUTPUT"
+          echo "Deploying InkNote content from ${current_branch}."
+
       - name: Checkout web shell source
+        if: steps.branch-check.outputs.should_deploy == 'true'
         uses: actions/checkout@v4
         with:
           repository: ${{ env.INKNOTE_SOURCE_REPOSITORY }}
@@ -37,6 +61,7 @@ jobs:
           path: source
 
       - name: Setup Node
+        if: steps.branch-check.outputs.should_deploy == 'true'
         uses: actions/setup-node@v4
         with:
           node-version: 22
@@ -44,9 +69,11 @@ jobs:
           cache-dependency-path: source/package-lock.json
 
       - name: Configure GitHub Pages
+        if: steps.branch-check.outputs.should_deploy == 'true'
         uses: actions/configure-pages@v5
 
       - name: Prepare content
+        if: steps.branch-check.outputs.should_deploy == 'true'
         shell: bash
         run: |
           rm -rf source/content source/apps/web/public
@@ -59,6 +86,7 @@ jobs:
           fi
 
       - name: Resolve Pages base
+        if: steps.branch-check.outputs.should_deploy == 'true'
         id: pages-base
         shell: bash
         run: |
@@ -72,28 +100,33 @@ jobs:
           fi
 
       - name: Install dependencies
+        if: steps.branch-check.outputs.should_deploy == 'true'
         working-directory: source
         run: npm ci
 
       - name: Build web
+        if: steps.branch-check.outputs.should_deploy == 'true'
         working-directory: source
         run: npm run web:build
         env:
           VITE_PAGES_BASE: ${{ steps.pages-base.outputs.base }}
 
       - name: Prepare SPA fallback
+        if: steps.branch-check.outputs.should_deploy == 'true'
         shell: bash
         run: |
           cp source/apps/web/dist/index.html source/apps/web/dist/404.html
           touch source/apps/web/dist/.nojekyll
 
       - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v4
+        if: steps.branch-check.outputs.should_deploy == 'true'
+        uses: actions/upload-pages-artifact@v3
         with:
           path: source/apps/web/dist
 
   deploy:
     needs: build
+    if: needs.build.outputs.should_deploy == 'true'
     runs-on: ubuntu-latest
     environment:
       name: github-pages
