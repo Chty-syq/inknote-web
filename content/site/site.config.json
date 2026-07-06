@@ -109,8 +109,8 @@
   ],
   "repository": {
     "remote": "git@github.com:Chty-syq/inknote-web.git",
-    "contentBranch": "test",
-    "branch": "test",
+    "contentBranch": "web-test",
+    "branch": "web-test",
     "pagesUrl": "https://chty-syq.github.io/inknote-web/",
     "basePath": "/inknote-web/"
   },

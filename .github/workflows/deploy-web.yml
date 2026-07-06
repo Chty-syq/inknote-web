@@ -3,7 +3,7 @@ name: Build Web From InkNote Content
 on:
   push:
     branches:
-      - "test"
+      - "web-test"
   workflow_dispatch:
 
 permissions:
