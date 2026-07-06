@@ -42,7 +42,7 @@ jobs:
             exit 0
           fi
 
-          configured_branch="$(node -e "const fs=require('fs'); const config=JSON.parse(fs.readFileSync('content-source/content/site/site.config.json','utf8')); const repository=config.repository||{}; process.stdout.write(String(repository.contentBranch||repository.branch||'').trim());")"
+          configured_branch="$(python3 -c 'import json, pathlib; config = json.loads(pathlib.Path("content-source/content/site/site.config.json").read_text(encoding="utf-8-sig")); repository = config.get("repository") or {}; print(str(repository.get("contentBranch") or repository.get("branch") or "").strip(), end="")')"
           if [ -n "$configured_branch" ] && [ "$configured_branch" != "$current_branch" ]; then
             echo "should_deploy=false" >> "$GITHUB_OUTPUT"
             echo "Current branch ${current_branch} is not configured deployment branch ${configured_branch}; skip deployment."

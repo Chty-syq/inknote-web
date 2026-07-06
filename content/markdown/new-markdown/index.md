@@ -1,13 +1,12 @@
 ---
 type: markdown
 title: Generative Adversarial Imitation Learning
-slug: "9272282"
-date: 2026-07-01
-updatedAt: 2026-07-07 02:54:33
-tags:
-  - 数学
-published: false
-category: 数学研究
+slug: 3187429
+order: 2
+date: 2026-04-08
+updatedAt: 2026-06-22 22:59:36
+published: true
+category: machine-learning
 ---
 
 ## 1. *Characterizing the Induced Optimal Policy*

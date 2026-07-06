@@ -3,5 +3,22 @@
     "slug": "数学研究",
     "label": "数学研究",
     "order": 1
+  },
+  {
+    "slug": "classics",
+    "label": "文学经典",
+    "labelEn": "Classisc",
+    "order": 2
+  },
+  {
+    "slug": "mathmatics",
+    "label": "Mathmatics",
+    "order": 3
+  },
+  {
+    "slug": "machine-learning",
+    "label": "机器学习",
+    "labelEn": "Machine Learning",
+    "order": 4
   }
 ]
