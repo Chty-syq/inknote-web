@@ -1,7 +1,8 @@
 [
   {
-    "slug": "数学研究",
+    "slug": "mathmatics",
     "label": "数学研究",
+    "labelEn": "Mathmatics",
     "order": 1
   },
   {
@@ -11,14 +12,9 @@
     "order": 2
   },
   {
-    "slug": "mathmatics",
-    "label": "Mathmatics",
-    "order": 3
-  },
-  {
     "slug": "machine-learning",
     "label": "机器学习",
     "labelEn": "Machine Learning",
-    "order": 4
+    "order": 3
   }
 ]

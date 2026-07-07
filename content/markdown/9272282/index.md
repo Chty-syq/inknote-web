@@ -7,7 +7,7 @@ updatedAt: 2026-07-07 02:54:33
 tags:
   - 数学
 published: false
-category: 数学研究
+category: mathmatics
 ---
 
 ## 1. *Characterizing the Induced Optimal Policy*
