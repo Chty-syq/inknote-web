@@ -1,12 +1,36 @@
 ---
 type: markdown
-title: About
+title: 关于
 slug: about
 date: 2026-04-08
-updatedAt: 2026-04-08
-summary: About the InkNote writing system and the desktop editor behind it.
+updatedAt: 2026-07-09
+summary: 个人笔记本与长期写作空间。
 published: true
 permalink: /about
 ---
 
-InkNote keeps the handwritten notebook generator as a first-class feature while treating regular articles, project pages, and static pages as markdown notes in the same content system.
+这里是 Chty's Blog。
+
+> 秋阴不散霜飞晚，留得残荷听雨声。
+
+我把这里当作一个长期笔记本，用来整理学习、阅读、推导、项目和一些偶尔冒出来的想法。内容不一定完整，也不一定永远正确，但会尽量保留思考发生时的痕迹。
+
+## 这里会写什么
+
+- 数学、机器学习、强化学习相关笔记
+- 读书、论文、课程和推导整理
+- 一些工具、项目和技术实验
+- 古诗文摘录与手写笔记
+- 偶尔的杂感
+
+## 为什么写
+
+写作对我来说更像是整理记忆。有些东西不写下来，很快就会散掉；写下来之后，即使当时不完美，之后也能继续回到那里。
+
+这个博客也是我自己的内容系统实验：桌面端编辑，本地内容管理，再同步到静态网页。
+
+## 关于我
+
+Chty。喜欢数学、计算机、动漫、古典文字，也喜欢把零散的东西慢慢整理成一个能长期维护的小世界。
+
+如果你在这里看到有用的内容，很高兴它刚好帮到了你。
